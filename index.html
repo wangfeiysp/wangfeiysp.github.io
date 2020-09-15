@@ -263,6 +263,62 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-vue diff算法"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2020/09/15/vue%20diff%E7%AE%97%E6%B3%95/">vue diff详解</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2020/09/15/vue%20diff%E7%AE%97%E6%B3%95/" class="article-date">
+	  <time datetime="2020-09-15T03:20:46.000Z" itemprop="datePublished">2020-09-15</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/VUE%E6%A1%86%E6%9E%B6/">VUE框架</a>
+
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          ①当数据发生变化时，vue是怎么更新节点的？
+我们先根据真实DOM生成一颗virtual DOM，当virtual DOM某个节点的数据改变后会生成一个新的Vnode，然后Vnode和oldVnode作对比，发现有不一样的地方就直接修改在真实的DOM上，然后使oldVnode的值为Vnode。
+diff的过程就是调用patch函数，比较新旧节点，一边比较一边给真实的DOM打补丁。
+②virtual DOM和真实DOM的区别？
+virtual DOM是将真实的DOM的数据抽取出来，以对象的形...
+        </p>
+        <p class="article-more-link">
+          <a href="/2020/09/15/vue%20diff%E7%AE%97%E6%B3%95/#more">Read More</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-博客成立啦"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
