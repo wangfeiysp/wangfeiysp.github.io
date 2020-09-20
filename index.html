@@ -263,7 +263,7 @@
         
           <section id="main" style="float:none;">
   
-    <article id="post-vue diff算法"  class="article article-type-post" itemscope itemprop="blogPost" >
+    <article id="post-Node的EventLoop"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -271,7 +271,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/09/15/vue%20diff%E7%AE%97%E6%B3%95/">vue diff详解</a>
+      <a class="article-title" href="/2020/09/20/Node%E7%9A%84EventLoop/">Node的EventLoop</a>
     </h1>
   
 
@@ -279,12 +279,12 @@
     
     <div class="article-meta">
       
-	<a href="/2020/09/15/vue%20diff%E7%AE%97%E6%B3%95/" class="article-date">
-	  <time datetime="2020-09-15T03:20:46.000Z" itemprop="datePublished">2020-09-15</time>
+	<a href="/2020/09/20/Node%E7%9A%84EventLoop/" class="article-date">
+	  <time datetime="2020-09-20T13:44:57.000Z" itemprop="datePublished">2020-09-20</time>
 	</a>
 
       
-    <a class="article-category-link" href="/categories/VUE%E6%A1%86%E6%9E%B6/">VUE框架</a>
+    <a class="article-category-link" href="/categories/Node-js/">Node.js</a>
 
       
       
@@ -293,14 +293,16 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p class="article-excerpt-content">
-          ①当数据发生变化时，vue是怎么更新节点的？
-我们先根据真实DOM生成一颗virtual DOM，当virtual DOM某个节点的数据改变后会生成一个新的Vnode，然后Vnode和oldVnode作对比，发现有不一样的地方就直接修改在真实的DOM上，然后使oldVnode的值为Vnode。
-diff的过程就是调用patch函数，比较新旧节点，一边比较一边给真实的DOM打补丁。
-②virtual DOM和真实DOM的区别？
-virtual DOM是将真实的DOM的数据抽取出来，以对象的形...
+          node事件循环机制以及和浏览器事件循环对比node.js事件循环（1）先说一下线程和进程的概念：
+js是单线程，也就是说一个进程里只有一个主线程；
+进程：CPU资源分配的最小单位；—相当于一个应用程序，如qq等.exe文件
+线程：CPU调度的最小单位；—相当于应用程序中的一个功能，如聊天等；
+进程相当于工厂，而线程就相当于工厂里面的工人，1.一个进程由一个或者多个线程组成，线程是一个进程中代码的不同执行路线；
+2.进程之间相互独立，但是用一个进程中的内存空间是能共享的
+（2）node.j...
         </p>
         <p class="article-more-link">
-          <a href="/2020/09/15/vue%20diff%E7%AE%97%E6%B3%95/#more">Read More</a>
+          <a href="/2020/09/20/Node%E7%9A%84EventLoop/#more">Read More</a>
         </p>
       
     </div>
